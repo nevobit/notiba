@@ -1,11 +1,22 @@
 import { RouteObject } from 'react-router-dom';
-import App from '../App';
 import { ErrorBoundary } from '../screens';
+import Home from '@/modules/assets/screens/Home';
+import Create from '@/modules/assets/screens/Create';
 
 export const routes: RouteObject[] = [
   {
-    path: '/app',
-    element: <App />,
+    path: '/',
+    element: <Home />,
+    errorElement: <ErrorBoundary />,
+  },
+  {
+    path: '/assets',
+    element: <Home />,
+    errorElement: <ErrorBoundary />,
+  },
+  {
+    path: '/assets/new',
+    element: <Create />,
     errorElement: <ErrorBoundary />,
   },
 ];
