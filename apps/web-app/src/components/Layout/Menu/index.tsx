@@ -33,6 +33,8 @@ const Menu = () => {
   const menuItems = [
     { icon: <Home size={22} strokeWidth='1.5' />, label: 'Home', to: '/' },
     { icon: <Wallet size={22} strokeWidth='1.5' />, label: 'Assets', to: '/assets' },
+    // Added Finances link
+    { icon: <Wallet size={22} strokeWidth='1.5' />, label: 'Finances', to: '/finances' },
     { icon: <SquaresUnite size={22} strokeWidth='1.5' />, label: 'Hub', to: '/hub' },
     { icon: <MessageCircle size={22} strokeWidth='1.5' />, label: 'Chat', to: '/chat' },
     { icon: <User size={22} strokeWidth='1.5' />, label: 'Profile', to: '/profile' },

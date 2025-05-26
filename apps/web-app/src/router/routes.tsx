@@ -2,6 +2,7 @@ import { RouteObject } from 'react-router-dom';
 import { ErrorBoundary } from '../screens';
 import Home from '@/modules/assets/screens/Home';
 import Create from '@/modules/assets/screens/Create';
+import FinancesHome from '@/modules/finances/screens/FinancesHome';
 import Layout from '@/components/Layout/Layout';
 
 export const routes: RouteObject[] = [
@@ -18,6 +19,11 @@ export const routes: RouteObject[] = [
       element: <Home />,
       errorElement: <ErrorBoundary />,
     },
+    {
+      path: '/finances',
+      element: <FinancesHome />,
+      errorElement: <ErrorBoundary />,
+    }
     ],
     errorElement: <ErrorBoundary />,
   },
