@@ -20,7 +20,6 @@
   "esnext": "build/esnext/index.esnext",
   "types": "build/ts/src/index.d.ts",
   "scripts": {
-    "build": "run-s build:types build:js build:validate",
     "build:types": "tsc -b",
     "build:js": "rollup -c",
     "build:validate": "node scripts/build-validate.js",

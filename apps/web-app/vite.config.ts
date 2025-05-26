@@ -18,8 +18,8 @@ export default defineConfig({
       swDest: "dist/sw.js"
     },
     manifest: {
-      name: "App Name",
-      short_name: "App",
+      name: "Notiba",
+      short_name: "Notiba",
       icons: [
         {
           "src": "manifest-icon-192.maskable.png",

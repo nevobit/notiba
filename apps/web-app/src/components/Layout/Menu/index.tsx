@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Home, Wallet, User, MessageCircle } from 'lucide-react';
+import { Home, Wallet, User, MessageCircle, SquaresUnite } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import styles from './Menu.module.css';
 
@@ -31,10 +31,11 @@ const Menu = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const menuItems = [
-    { icon: <Home size={24} />, label: 'Home', to: '/' },
-    { icon: <Wallet size={24} />, label: 'Assets', to: '/assets' },
-    { icon: <MessageCircle size={24} />, label: 'Chat', to: '/chat' },
-    { icon: <User size={24} />, label: 'Profile', to: '/profile' },
+    { icon: <Home size={22} strokeWidth='1.5' />, label: 'Home', to: '/' },
+    { icon: <Wallet size={22} strokeWidth='1.5' />, label: 'Assets', to: '/assets' },
+    { icon: <SquaresUnite size={22} strokeWidth='1.5' />, label: 'Hub', to: '/hub' },
+    { icon: <MessageCircle size={22} strokeWidth='1.5' />, label: 'Chat', to: '/chat' },
+    { icon: <User size={22} strokeWidth='1.5' />, label: 'Profile', to: '/profile' },
   ];
 
   return (

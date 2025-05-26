@@ -1,6 +1,6 @@
 import { Asset } from '../../hooks/useAssets';
 import styles from './Card.module.css';
-
+import { DivisaFormater } from '@repo/tools';
 
 interface Props {
   asset: Asset;
@@ -14,10 +14,10 @@ export default function AssetCard({ asset }: Props) {
         <span className={styles.status}>{asset.status}</span>
           </div>
           <ul className={styles.list} >
-              <li><p>Category</p> <span></span></li>
-              <li><p>Priority</p> <span></span></li>
-              <li><p>Cost</p> <span>${asset.estimated_cost.toFixed(2)}</span></li>
-              <li><p>Brand</p> <span></span></li>
+        <li><p>Category</p> <span>{ asset?.category}</span></li>
+        <li><p>Priority</p> <span>{ asset?.priority}</span></li>
+              <li><p>Cost</p> <span>{DivisaFormater({ value: asset.estimated_cost })}</span></li>
+        <li><p>Brand</p> <span>{ asset.brand}</span></li>
               <li><p>Acquisition</p> <span>{new Date(asset.acquisition_date).toLocaleDateString()}</span></li>
               <li><p>Use</p> <span>{asset.primary_use}</span></li>
           </ul>
